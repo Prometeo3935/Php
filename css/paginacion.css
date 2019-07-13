@@ -1,0 +1,92 @@
+* { 
+	padding:0px;
+	margin: 0px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: box-shadow;   /*este ultimo prefijo lo agregue yo para q funcione en navegadores nuevos la sombra de la caja (section  ubicacion)*/
+}
+.contenedor {
+	width: 90%;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+h1 {
+	margin-top: 40px;
+	color: #D35400;               /*#136D78;
+	/*margin: 20px 0px;*/
+	padding: 20px 20px;
+	/*background: #136D78;*/	  
+	text-align: center;
+	font-size: 50px; 
+}
+
+.articulos .view {
+	margin-top:70px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.articulos ul li {
+	list-style: none;
+	color: #6C747E;
+	display: block;
+	border-bottom: 1px solid #647678;	
+	padding: 20px;
+	margin-bottom: 15px;
+	text-align: left;
+	font-size: 20px;
+	
+}
+
+/*.view .imagen {
+	border-bottom: 5px solid black;
+	
+}*/
+.Paginacion {
+	margin-top: 40px;
+	/*display: flex;	
+	justify-content: center;*/
+	position: relative;
+	left: 150px;
+	margin-bottom: 50px;
+}
+.Paginacion ul li {
+	list-style: none;
+	display: inline-block;	
+	text-decoration: none;
+	padding: 10px;
+	margin: 15px;
+	
+}
+.Paginacion ul li a {
+	text-decoration: none;
+	font-size: 20px;
+	background: #1b2e38;                          /*#4A9BFC;               /* #05E0FA;*/
+	padding: 15px 25px; 
+	color: #fff;          /*#020364; */
+
+}
+.Paginacion ul li a:hover {
+	background: #6C747E;                  /*#BE5515;*/
+	transition: 0.5s;
+	color: #f3f3f3;
+
+}
+.Paginacion ul .active a {
+	background: #D35400;            /*#ce7f08;*/
+	padding: 15px 25px;
+	                  /*#BE5515;*/
+}
+
+.Paginacion ul  .disabled a {
+	background: #c8c8c8;                  
+    display: inline-block;
+    padding: 15px 25px;
+    cursor: not-allowed;
+    color: #fff;
+    text-decoration: none;
+}

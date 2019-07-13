@@ -1,0 +1,220 @@
+/*.tabla_1 {
+	display: none;
+}*/
+.envio_domicilio {
+	margin-bottom: 50px;
+}
+
+.envio_domicilio .titulo {
+	font-size: 25px;
+	width: 100%;	
+	/*margin-top: 25px;*/
+	margin-bottom: 30px;
+	color: #051369;         /*#D35400;*/
+	text-align: center;
+	padding: 15px;
+	/*border: 1px solid #051369; /*#f2f2f2; /*#051369;*/
+	background: rgba(211, 211, 211,0.4);
+	box-shadow: 6px 6px 6px #979898 inset;
+}
+.parrafos .titulo_1, .opcion_2, .opcion_3 {
+	font-size: 25px;
+	color: #051369; 
+	padding: 15px;
+}
+/*.parrafos .opcion_2 {
+	font-size: 25px;
+	color: #051369; 
+} */
+.parrafos .titulo_1 span {
+	color: #D35400;
+}
+
+.envio_domicilio .furgoneta {
+	margin-top: 50px;
+	/*margin-bottom: 50px;*/		
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.furgoneta .servicio_1 {
+	margin-top: 40px;	
+	font-size: 35px;
+	color: #D35400;         /*rgb(211, 211, 211);*/
+}
+.contenedor_furgoneta {
+	/*margin: 0 auto;
+	/*margin: auto;*/
+	width: 100%;	
+	/*background: rgba(30, 36, 96, 0.7);                        /*rgb(207, 196, 213);*/
+}
+.furgoneta {	
+	width: 90%;
+	margin: 0 auto;
+	max-width: 81.25rem;
+}
+.furgoneta img {
+	margin-top: 15px;
+}
+.contenedor_furgoneta hr {
+	border:none;
+    height: 1.25em;
+ 	width: 100%;
+	height: 3.125em;
+	margin-top: 0;
+	/*border-bottom: 1px solid #1f1209;*/
+	box-shadow: 0 20px 20px -20px #333;
+  	margin: -3.125em auto 0.625em;
+  	padding-bottom: 0.9375em; 
+}
+.parrafos p {
+	text-align: center;
+}
+.parrafos .opcion_3  {
+	margin-bottom: 40px;
+}
+
+.envio_domicilio .parrafos {
+	/*background: #F2FEFE; /*#DCE7EE;*/
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+.parrafos .redes img {
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	margin-right: 55px;
+}
+.parrafos .redes {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;	
+	/*position: relative;
+	left: 200px;*/
+}
+.parrafos .redes a {
+	text-decoration: none;
+}
+.redes .sub_titulo {
+	margin-right: 20px;
+}
+.envio_domicilio hr {
+	border:none;
+    height: 1.25em;
+ 	width: 100%;
+	height: 3.125em;
+	margin-top: 0;
+	/*border-bottom: 1px solid #1f1209;*/
+	box-shadow: 0 20px 20px -20px #333;
+  	margin: -3.125em auto 0.625em;
+  	padding-bottom: 0.9375em; 
+}
+.consejo_profesional h2 {
+	text-align: center;
+	margin-bottom: 70px;
+	margin-top: 70px;
+	font-size: 35px;
+	color: #D35400;
+}
+.consejo_profesional {
+	margin-bottom: 70px;
+}
+.consejo_profesional .articulo .imagen {
+	position: relative;
+}
+.consejo_profesional .articulo .consejo {
+	position: absolute;	
+	top: 200px;
+	background-color: rgba(255,255,255,0.5);
+	padding: 20px;
+
+}
+@media screen and (max-width: 1456px) {
+	.parrafos .redes {
+		flex-wrap: wrap;
+	}
+	.parrafos .redes {
+		justify-content: center;
+	}	
+}
+@media screen and (max-width: 999px) {
+	.envio_domicilio .furgoneta h2 {
+		font-size: 24px;
+		margin: 0px 20px;
+		margin-top: 25px;
+	}
+	.furgoneta img {
+		width: 70px;
+		height: 70px;
+	}
+	.parrafos p {
+		font-size: 18px;
+	}
+	.parrafos .titulo {
+		font-size: 18px;
+	}
+	.parrafos .titulo_1 {
+		font-size: 18px;
+	}
+	.parrafos .redes img {
+		width: 30px;
+		height: 30px;
+	}
+	.redes .iconos {
+		margin-left: 25px;
+	}
+}
+	.consejo_profesional h2 {
+		font-size: 24px;
+	}
+	.furgoneta .servicio_1 {
+		font-size: 24px;
+	}
+@media screen and (max-width: 696px) {
+	.envio_domicilio .furgoneta {
+	margin-top: 20px;
+}
+}
+@media screen and (max-width: 499px) {
+	.envio_domicilio .furgoneta h2 {
+		font-size: 20px;
+		text-align: center;	
+		margin-top: 15px;	
+}
+	.furgoneta img {
+		width: 50px;
+		height: 50px;
+	}
+	.envio_domicilio .furgoneta {
+	margin-top: 10px;
+}
+	.parrafos p {
+		font-size: 15px;
+	}
+	.parrafos .titulo {
+		font-size: 15px;
+	}
+	.parrafos .titulo_1 {
+		font-size: 15px;
+	}
+	.consejo_profesional h2 {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 700px) {
+	.consejo_profesional .articulo .imagen img {
+		display: none;
+	}
+	.consejo_profesional .articulo .consejo {
+	position: relative;	
+	top: 0px;
+	background-color: rgba(211, 211, 211,0.4);                             /*rgba(255,255,255,0.5);*/
+	padding: 20px;
+}
+	.consejo_profesional h2 {
+		margin-top: 45px;
+		margin-bottom: 45px;
+	}
+}
+
+

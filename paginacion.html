@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">  
+ <link rel="stylesheet" href="css/paginacion.css">
+   <title>Paginacion</title>
+ </head>
+
+ <body>
+  <?php require 'header.php' ; ?>
+   <div class = "contenedor">
+   	<h1><?php echo $titulo ?></h1>      
+   	  <section class="articulos"> 
+      <div class="view">
+
+        <div class="listado">
+         <ul>           
+          <?php foreach ($productos as $producto):?>
+            <li><?php echo $producto['id'] . '.-' . $producto['descripcion']; ?></li>               
+          <?php endforeach;?>          
+        </ul>         
+        </div> 
+
+        <div class="imagen">
+         <img src="<?php echo $url_imagen?>">        
+        </div> 
+
+        </div>   
+              	
+   	  </section>
+   
+
+   	  <section class="Paginacion">
+   	  	  <ul>
+            <?php if ($pagina == 1): ?>
+   	  	  	  <li class="disabled"> <a href="#">&laquo;</a></li>
+            <?php else: ?> 
+              <li> <a href='?pagina=<?php echo $pagina - 1?>&categoria=<?php echo $categoria?>'>&laquo;</a></li>              
+            <?php endif; ?>
+
+            <?php for ($i=1 ; $i <= $numeropaginas; $i++) {
+               if ($pagina == $i)
+               {
+                 echo "<li class='active'> <a href='?pagina=$i&categoria=$categoria'>$i</a></li>";  
+               } else {
+
+                 echo"<li><a href='?pagina=$i&categoria=$categoria'>$i</a></li>";
+               }
+             }
+            ?>        
+            <?php if ($pagina == $numeropaginas): ?>
+              <li class="disabled"> <a href="#">&raquo;</a></li>
+            <?php else: ?> 
+              <li> <a href='?pagina=<?php echo $pagina + 1?>&categoria=<?php echo $categoria?>'>&raquo;</a></li> 
+            <?php endif; ?>
+          </ul>  	 
+
+   	  </section>
+   </div>
+   
+   <?php require 'footer.html' ; ?>
+
+ </body>
+
+</html>

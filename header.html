@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lange="es">
+<head>
+	<meta charset="UTF-8">	
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">	
+	<title>FARMACIA LAS MARIAS</title>
+	<link href="https://fonts.googleapis.com/css?family=Gabriela roboto slab" rel="stylesheet">		
+	<link rel="stylesheet" href="css/normalize.css">	
+	<link rel="stylesheet" href="css/font-awesome.min.css">	
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="stylesheet" href="fonts.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>		
+</head>
+
+<article>
+	<h1 hidden>ENCABEZADO, FARMACIA LAS MARIAS.</h1> 
+	
+		<section class="sub-header"> 
+		<h2 hidden>Sub-menu.</h2>	
+			<div class="contenedor">
+				<div class="contenedor-contactos">
+					<div class="iconos-redes">								
+						<a href="https://www.facebook.com/farmacialasmarias" target="_blank">
+						<img src="img/facebook1.png" alt="enlace a facebook con icono" border="0"> 
+						</a>
+
+						<a href="https://www.instagram.com/farmacialasmarias" target="_blank">
+						<img src="img/instagram.png" class="instagram">
+						</a>
+
+						<img src="img/whatsapp.png" alt="icono whatsapp" title="351-3373973" class="whatsapp">
+					</div>
+						<div class="logo_mini">
+							<img src="img/logoazul2.png" alt="logofarmacia">
+						</div>
+						<div class="cv">Trabaja con nosotros</div>																							
+				</div>							
+			</div>						
+		</section>
+
+		<div class="slogan">		
+			<div class="contenedor">
+				<p>"En <i><strong>Farmacia Las Marias</strong> estamos a su servicio para brindarle una completa linea de productos fármacos, dermocosméticos, regaleria, accesorios, perfumeria y mucho mas con la mejor calidad de atención, buenos precios y promociones exclusivas".</i></p>												
+			</div>
+			<hr>
+		</div>
+
+ 		
+ 		<section class="header">  
+ 		<h2 hidden>Menu Principal.</h2>	
+ 			<div class="contenedor">				
+ 				<div class="logoazul">
+ 					<img src="img/logoazul2.png" alt="logofarmacia">
+ 				</div>
+
+ 				<div class="menu_bar">
+ 					<a href="#menu" class="bt-menu"><span class="icon-menu3"></span>Menu</a>
+ 				</div>
+
+ 				<div class="items">
+ 					
+ 					<nav> 
+ 						<ul>
+	 						<li><a href="#home"><span class="icon-home"></span>Home</a></li>
+	 						<li><a href="#contacto"><span class="icon-phone"></span>Contacto</a></li>
+	 						<li><a href="#servicios"><span class="icon-truck"></span>Servicios</a></li>
+	 						<li class="submenu">
+ 								<a href="#productos"><span class="caret icon-circle-down"></span>Productos<!--<span class="caret icon-arrow-down6"></span>--></a>
+ 								<ul class="children"> 									
+ 								 <?php foreach ($categorias as $cat):?>             							     
+ 								  <li><a href='paginacion.php?pagina=1&categoria=<?php echo $cat["id"];?>'<span class="icon-dot-single"></span><?php echo $cat['descripcion'];?></a></li>
+ 								 <?php endforeach;?>
+	 								<!--<li><a href="paginacion.php?categoria=2"><span class="icon-dot-single"></span>Cosmética</a></li>
+	 								<li><a href="paginacion.php?categoria=3"><span class="icon-dot-single"></span>Perfumeria</a></li>
+	 								<li><a href="paginacion.php?categoria=4"><span class="icon-dot-single"></span>Accesorios</a></li>
+	 								<li><a href="paginacion.php?categoria=5"><span class="icon-dot-single"></span>Regalería</a></li>
+	 								<li><a href="paginacion.php?categoria=6"><span class="icon-dot-single"></span>Bebé y Maternidad</a></li>--> 								
+ 								</ul>
+ 							</li>
+ 						</ul>  							
+	  				
+  				<!--<div class="dropdown">
+  				<button class="dropbtn" onclick="myFunction()">Productos
+    			<i class="fa fa-caret-down"></i>
+  				</button>
+  					<div class="dropdown-content" id="myDropdown">
+						<a href="#">Cuidados de la piel</a>
+						<a href="#">Cosmetica</a>
+						<a href="#">Perfumeria</a>
+						<a href="#">Accesorios</a>
+						<a href="#">Regaleria</a>
+						<a href="#">Bebe y Maternidad</a>
+					</div>
+				</div>-->
+				  </nav>																														 				
+				</div>				
+			</div>
+ 		</section> 				
+ 			
+</article>
+
+
+<script>
+
+
+$(document).ready(function(){
+
+var contador = 1;
+ 
+  $(".menu_bar").click(function(){
+    //console.log("The paragraph was clicked.");
+    
+	if (contador==1) {
+		$('.items').animate({
+			left: '0'
+		});
+		contador = 0;
+	} else {
+		contador = 1;
+		$('.items').animate({
+			left: '-100%'
+		});
+	}
+		
+  });
+});
+
+//mostrar y ocultar submenu.//
+$('.submenu').click(function(){
+	$(this).children('.children').slideToggle();
+
+});
+
+
+
+</script>
+
+
+
+</html>
+

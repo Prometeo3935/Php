@@ -1,0 +1,210 @@
+.contenedor {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 81.25em;
+}
+.mapa {
+	margin-top: 2.5em;
+	margin-bottom: 4.5em;
+	width: 100%;
+	max-width: 81.25em;
+	height: 25em;
+}
+.contacto .titulo {	
+	font-size: 25px;
+	margin-top: 40px;
+	text-align: center;
+	color: #D35400;
+}
+/*.contacto {
+	margin-top: 70px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.form {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 81.25rem;
+	background: rgba(0,0,0,0.4);
+	padding: 10px 20px;*/
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	width: 800px;	
+	margin-right: 40px;	
+	/*box-shadow: 0 0 7px grey;*/
+	overflow: hidden;
+	background: #8493A5;
+	padding: 20px;
+
+}
+
+.informacion form textarea {
+	border: 1px solid rgba(30, 36, 96, 0.7);
+	border-radius: 2px;
+	padding: 16px;	
+	display: block;
+	/*margin-bottom: 20px;*/
+	color: #141938;
+	height: 180px;
+	max-width: 800px;	
+	max-height: 1000px;
+	margin-bottom: 16px;
+}
+.informacion form textarea:focus {
+	border: 2px solid rgba(30, 36, 96, 0.7);
+	padding: 15px;
+	background: #fff;
+}
+
+.formulario .caja-1 {
+	padding: 16px;
+	border: 1px solid rgba(30, 36, 96, 0.7);
+	border-radius: 2px;
+	color: #141938;
+	margin-bottom: 16px;	
+}
+.formulario .caja-1:focus {
+	border: 2px solid rgba(30, 36, 96, 0.7);
+	padding: 15px;
+	background: #fff;
+}
+
+.formulario .boton {
+	padding: 5px;
+	background: #ED572A;
+	color: #E1E9FA;
+	font-size: 1em;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+	float: right;
+}
+.formulario .boton:focus {
+	border: 2px solid rgba(30, 36, 96, 0.7);
+	padding: 4px;
+}
+.formulario .boton:hover {
+	background: #E64A19;
+}
+.alert {
+	margin-bottom: 0.5em;	
+	color: #fff;
+	/*border-radius: 2px;*/	
+	font-size: 14px;
+}
+.alert .error {
+	background: #f5f5f5;
+	border: 1px solid #a94442;
+	color: #a94442;
+}
+.alert .ssucces {
+	background: #4CAF50;
+}
+.contacto .informacion {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 4.5em;
+	margin-bottom: 2.5em;
+}
+
+.datos p span {
+	font-size: 30px;
+	margin-right: 15px;	
+	color: #D35400;
+} 
+
+.datos p .icon-whatsapp {
+	margin-left: 15px;
+}
+
+.datos p .icon-location {
+	font-size: 30px;
+	margin-right: 15px;
+}
+
+.datos p strong {
+	color: #051369;
+}
+/*.datos p {
+	text-align: left;
+}*/
+
+@media screen and (max-width: 999px) {
+	.datos p span {
+		font-size: 20px;
+		margin-right: 10px;	
+	}
+	.datos p .icon-location {
+		font-size: 20px;
+		margin-right: 10px;
+	}
+	.formulario .caja-2 {
+	height: 70px;
+	max-width: 800px;	
+	max-height: 1000px;
+}
+	.formulario {
+		width: 600px;
+	}
+	.contacto .titulo {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 499px) {
+	.contacto .titulo {
+		font-size: 12px;
+	}	
+	.contacto .informacion {
+	display: flex;
+	flex-direction: column;	
+}
+	.formulario {
+		width: 100%;		
+		margin-bottom: 2.5em;
+	}
+	.formulario .caja-1, .caja-2 {
+	padding: 15px;
+}
+	.contacto .informacion {
+		margin-top: 3em; 
+	}
+	.informacion .datos {
+		display: flex;
+		flex-direction: column;
+		text-align: center;			
+	}
+	.informacion .datos .p {
+		text-align: center;
+		/*margin-right: 20px;*/
+	}
+	.datos p span {
+		font-size: 18px;
+		margin-right: 5px;
+}
+	.datos p .icon-location {
+	font-size: 18px;
+	margin-right: 5px;
+}
+	.datos p .icon-whatsapp {
+		margin-left: 5px;
+	}	
+}
+@media screen and (max-width: 370px) {
+	.formulario {
+		/*margin-left: 15px;*/
+		margin-right: 20px;
+
+	}
+}
+
+@media screen and (min-width: 500px max-width: 600px) {
+	.contacto .titulo {
+		font-size: 15px;
+	}
+}
+
+
